@@ -1,0 +1,123 @@
+<!--Portfolio HTML-->
+
+<!DOCTYPE html>
+
+<!--     HEAD     -->
+
+<head>
+
+  <!-- next 3 lines allow for vega embed -->    
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
+
+  <title> Felix's Portfolio</title>
+  
+  <link rel="stylesheet" href="portfolio.css">
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  </style>
+
+</head>
+
+<!-- START THE BODY SECTION -->
+<body>
+    
+    <div class="topnav" id="myTopnav">
+  <a onclick="window.location.href = 'index1.html'" >Home</a>
+  <a onclick="window.location.href = 'portfolio'" class="active">Portfolio</a>
+  <a onclick="window.location.href = 'project'" >Project</a>
+   </div>    
+   
+   <div class="container">
+   <h1>Portfolio</h1>
+   </div>
+
+   <hr>
+
+   <div class="title">
+    <h2>Homework 1 - My Website and Embedding Two Charts of Choice</h2>
+   </div> 
+
+   <hr class="dotted">
+
+   <div class="homework">
+    <p> I have created this website to present my portfolio and my project for the Data Science unit 22/23.
+        Also I have embedded two charts of my interest from the RapidCharts website.
+    </p>
+   </div>
+
+   <div class="homework">
+    <p> The first chart on the left is a chart tracking the price of Bitcoin</p>
+    <p> The second chart on the right is a chart showing the stadium capacity in the EPL</p>
+   </div>
+
+   <hr>
+
+
+   <div class="chartcontainer">
+    
+    <!--Chart 1 -->
+      <div class="chart2" id="chart1">
+          <script>
+            var myChart1 = "chart4_cryptoprices.json";
+            vegaEmbed('#chart1', myChart1);
+          </script>
+       </div>
+     
+    <!--Chart 2 -->
+      <div class="chart2" id="chart2">
+        <script>
+          var myChart2 = "chart5_football.json";
+          vegaEmbed('#chart2', myChart2);
+        </script>
+      </div>
+        
+      </div>
+
+      <hr>
+      
+
+   <div class="title">
+    <h2>Homework 2 - IMF chart and FT adjusted task</h2>
+   </div>
+
+   <hr class="dotted">
+
+   <div class="homework">
+    <p>The first chart displays oustanding IMF lending from 1984 to present day </p>
+    <p> The second chart is an improved version of a chart from the FT, due to inflation adjustment</p>
+   </div>
+
+   <hr>
+
+
+   <div class="chartcontainer">
+
+    <!-- CHART 3 initial IMF graph-->
+
+   <div class="chart4" id="chart3">
+    <script>
+      var myChart3= "chart6_IMFcreditoutstanding.json";
+      vegaEmbed('#chart3', myChart3);
+    </script>
+    </div>
+
+
+
+
+
+
+
+
+
+   </div>
+
+
+
+   
+    
+
+</body>
+
