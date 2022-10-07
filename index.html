@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Title for the page -->
-    <title>Document</title>
+    <title>Felix's Website</title>
 
     <!-- Link to my style sheet -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index1.css">
 
     <!--The next three lines allow the Vega embed-->
     <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
@@ -22,44 +22,22 @@
 
 
 <body>
+      
     <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
-    <div class="myWeek1">
+    <div class="topnav" id="myTopnav">
+        <a onclick="window.location.href = 'index'" class="active">Home</a>
+        <a onclick="window.location.href = 'portfolio.html'" >Portfolio</a>
+        <a onclick="window.location.href = 'project'" >Project</a>
+      </div>    
+
+
+    </div>
+          <div class="Home">
         <h1>Felix's Data Science for Economists.</h1>
         
-        <h3>Bitcoin</h3>
-        <p>The first chart tracks Bitcoin Prices.</p>
-        <div class="chart" id="Chart1"></div>
 
-        <h4>Football Stadiums</h4>
-        <p>My second chart looks at stadium capacity in the EPL.</p>
-        <div class="chart" id="Chart2"> </div>
-
-        <h5>IMF lending outstanding</h5>
-        <p>The third chart looks at IMF data on lending in the UK</p>
-        <div class="chart" id="Chart3"> </div>
 
     </div>
 </body>
 
-
-<script>
-    //Define charts:
-    var myChart1 = "chart1_covidUKRegions.json";
-    var myChart2 = "chart2_ukProductivity.json";
-    var myChart3 = "chart4_cryptoprices.json";
-    var myChart4 = "chart5_football.json";
-    var myChart5 = "IMFcreditoutstandingchart.json";
-
-
-
-    // Embed charts:
-    vegaEmbed('#Chart1', myChart3);
-    vegaEmbed('#Chart2', myChart4);
-    vegaEmbed('#Chart3', myChart5);
-
-    
-</script>
-
 </html>
-
-
