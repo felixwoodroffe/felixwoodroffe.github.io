@@ -47,12 +47,12 @@ body{
 
 p{
     color:black;
-    font-family: 'Nunito', sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 } 
 
 h2{
     color: black;
-    font-family: 'Major Mono Display', monospace;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1{
@@ -119,14 +119,4 @@ h1{
     display: inline-block;
     width: 1000px;
     margin: 20px 0px 20px 0px;
-}
-
-.png{
-    background-color: white;
-    width:450px;
-    border-width: 3px;
-    border-style: solid;
-    border-radius: 5px;
-    border-color: #bd3f37;
-    margin: 30px 275px 30px 275px;
 }
