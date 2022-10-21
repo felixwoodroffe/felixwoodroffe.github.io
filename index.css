@@ -17,7 +17,7 @@ body{
   }
   
   .topnav a {
-    float: center;
+    float: left;
     display: block;
     color: #092ea8;
     text-align: center;
