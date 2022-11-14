@@ -1,0 +1,33 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title":{
+      "text":"Africa",
+      "subtitle":"A base map of Africa" ,
+      "anchor": "start",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10
+  
+      
+    },
+    "width": 400,
+    "height": 400,
+  
+    "data":{
+      "url": "https://raw.githubusercontent.com/felixwoodroffe/felixwoodroffe.github.io/main/AFRICAGEO.json",
+      "format":{ 
+      "property": "features"}},
+      
+      "projection": {"type": "mercator"},
+      
+      "mark":{"type": "geoshape",
+      "stroke": "darkgrey",
+      "fill": "lightgray",
+      "strokeWidth": 0.5
+      
+      
+      },
+  
+  "encoding": {
+    "tooltip":{"field":"properties.name", "type": "nominal"}
+  }
+  }
