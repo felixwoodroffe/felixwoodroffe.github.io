@@ -61,7 +61,7 @@ h1{
 .Home{
     margin: auto;
     max-width: 800px;
-    background-color: darkcyan;
+    background-color: rgb(242,242,242);
     text-align: center;
 }
 
