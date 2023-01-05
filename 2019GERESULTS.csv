@@ -1,22 +1,19 @@
-Region ,Party,Total Party Votes  ,Percentage of Total Votes ,,,,,,,
-East Midlands ,Conservative,1280724,54,,,,,,,
-East Midlands ,Labour ,740975,32,,,,,,,
-East Midlands ,Other,316744,13,,,,,,,
-North East ,Conservative,478208,38,,,,,,,
-North East ,Labour ,532127,43,,,,,,,
-North East ,Other,239757,19,,,,,,,
-North West,Conservative,1321072,38,,,,,,,
-North West,Labour ,1638258,46,,,,,,,
-North West,Other,564354,16,,,,,,,
-South East ,Conservative,2512869,54,,,,,,,
-South East ,Labour ,1029966,22,,,,,,,
-South East ,Other,1109891,24,,,,,,,
-South West,Conservative,1612090,53,,,,,,,
-South West,Labour ,713226,23,,,,,,,
-South West,Other,728138,24,,,,,,,
-West Midlands,Conservative,1421439,53,,,,,,,
-West Midlands,Labour ,918123,34,,,,,,,
-West Midlands,Other,344542,13,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
+Region ,Party,Percentage of Total Votes 
+North East ,Conservative,38
+North East ,Labour ,43
+North East ,Other,19
+North West,Conservative,38
+North West,Labour ,46
+North West,Other,16
+South East ,Conservative,54
+South East ,Labour ,22
+South East ,Other,24
+South West,Conservative,53
+South West,Labour ,23
+South West,Other,24
+West Midlands,Conservative,53
+West Midlands,Labour ,34
+West Midlands,Other,13
+East Midlands ,Conservative,54
+East Midlands ,Labour ,32
+East Midlands ,Other,13
