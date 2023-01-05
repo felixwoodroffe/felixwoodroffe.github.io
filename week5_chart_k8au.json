@@ -2,14 +2,16 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "k8au",
     "title": {
-      "text": "Air emissions All greenhouse gases - Construction ",
+      "text": "Construction ",
       "subtitle": "Thousand tonnes CO2 equivalent",
+      "fontSize":11,
      "subtitleFontSize": 10,
      "subtitleFontStyle": "italic",
-     "anchor": "start",},
-     "width":300,
-     "height":300,
-  
+     "anchor": "start"},
+
+     "width":175,
+     "height":200,
+     
   
     "data": {
       "values":[
@@ -314,12 +316,40 @@
               "year": "2019"
           }
       ]}, 
+
+      "transform": [
+        {"filter": "datum.year>minYear"},
+        {"filter": "datum.year<maxYear"}
+      ],
+      "params": [
+        {
+          "name": "minYear",
+          "value": 1990,
+          "bind": {
+            "input": "range",
+            "min": 1990,
+            "max": 2019,
+            "step": 1,
+            "name": "Start year:"
+          }
+        },
+        {
+          "name": "maxYear",
+          "value": 2019,
+          "bind": {
+            "input": "range",
+            "min": 2015,
+            "max": 2019,
+            "step": 1,
+            "name": "End year:"
+          }
+        }],
     "mark": "line",
     "encoding": {
       
-      "x": {"field": "date", "type": "temporal", "axis":{"grid":"false", "title":null, }},
+      "x": {"field": "date", "type": "temporal", "axis":{"grid":"false", "title":null }},
   
       "y": {"field": "value", "type": "quantitative", "title":null
-      },
+      }
     }
   }
