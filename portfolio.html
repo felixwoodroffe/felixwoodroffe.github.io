@@ -25,7 +25,7 @@
 <body>
     
     <div class="topnav" id="myTopnav">
-  <a onclick="window.location.href = 'index.html'" >Home</a>
+  <a onclick="window.location.href = 'index1.html'" >Home</a>
   <a onclick="window.location.href = 'portfolio'" class="active">Portfolio</a>
   <a onclick="window.location.href = 'project'" >Project</a>
    </div>    
@@ -110,15 +110,9 @@
         vegaEmbed('#chart4', myChart4)
       </script>
     </div>
-     
-     <p> Once the data has been realised by adjusting the lending to a percentage of world GDP, it can be seen that the riskiest year was in fact 1984, 
-       due to the highest proportion of credit outstanding.</p>
-
-
 
     </div>
 
-  
     <!-- Chart 5 Daily Yields Graph WEEK 3 HOMEWORK-->
 
 
@@ -126,14 +120,14 @@
     <hr>
 
     <div class="title">
-      <h2> Homework 3 - Creating and embedding chart, directly through API</h2>
+      <h2> Homework 3 - Two charts: online data objects and visual encodings</h2>
     </div>
 
     <hr class="dotted">
 
     <div class="homework">
-      <p> This chart looks at the adjusted closing time of GBP/EUR, with price in Euros on the y-axis</p>
-      <p> The chart on the right looks at the adjusted closing time of GBP/USD, with price in USD on th y-axis</p>
+      <p> This chart on the left at the adjusted closing price of GBP/EUR in 2022, with price in Euros on the y-axis</p>
+      <p> The chart on the right looks at the adjusted closing price of GBP/EUR in 2022, with price in Euros on th y-axis</p>
     </div>
 
     <div class="chartcontainer">
@@ -147,13 +141,13 @@
 
     <div class="chart2" id="chart6">
       <script>
-        var myChart6="chart10_GBPUSDadjclosing.json";
+        var myChart6="chart10_GBPEURadjclosing.json";
         vegaEmbed('#chart6', myChart6);
       </script>
     </div>
-      
+
   </div>
-  
+
   <!-- WEEK 4 Task: SCRAPING TASK PGA TOUR RANKINGS BUBBLE PLOT (COULD USE SOME ADVANCEMENTS)-->
 
   <hr>
@@ -171,13 +165,17 @@
       <div class="chart2" id="chart7">
         <script>
           var myChart7="week4_FINALTASK.json";
-          vegaEmbed('#chart7', myChart7);
+          vegaEmbed('#chart7', myChart7)
         </script>
       </div>
 
+
+
+
     </div>
-  
-  <!-- Week 5 Task: 9 graphs through the means of data loops and apis-->
+
+
+    <!-- Week 5 Task: 9 graphs through the means of data loops and apis-->
 
     <hr>
     <div class="title">
@@ -186,14 +184,14 @@
 
     <hr class="dotted">
     <div class="homework">
-      <p> These charts look at All greenhouse gas emmisions measured (seperated by industry)</p>
+      <p> These charts look at All Greenhouse Gas Emmisions (seperated by industry)</p>
     </div>
 
-    <div class="week5">
+    <div class="chartcontainer">
 
          <div class="chart2" id="FRZQ">
           <script>
-            var myChart8="week5_chartfrzq.json";
+            var myChart8="week5_chart_frzq.json";
             vegaEmbed('#FRZQ', myChart8);
           </script>
          </div>
@@ -265,11 +263,9 @@
 
 
 
-   
 
 
 
-   
     
 
 </body>
