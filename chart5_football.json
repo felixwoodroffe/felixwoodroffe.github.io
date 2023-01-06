@@ -8,8 +8,8 @@
       "property": "data"}},
   
       "title": {
-      "text": "Premiership - venues",
-      "subtitle":["Stadium capacity, 20/21 season",""],
+      "text": "EPL-Stadium Size 2020-2021",
+      "subtitle":["Stadium capacity (seats)"],
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",

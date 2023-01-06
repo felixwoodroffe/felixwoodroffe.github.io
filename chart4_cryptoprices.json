@@ -1,10 +1,10 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
-    "description": "BitCoin Price",
+    "description": "Chart Tracking Price of Bitcoin",
   
      "title": {
-      "text": "Bitcoin: this month",
+      "text": "Bitcoin Price : Aug-Sept 2021",
       "subtitle":"High-low trading range, 8h time periods. Source: coinapi.io",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
