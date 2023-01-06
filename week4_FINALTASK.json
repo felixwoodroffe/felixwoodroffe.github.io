@@ -18,7 +18,8 @@
   "encoding": {
     "x": {"field": "EVENTS", "type": "quantitative","scale":{"domain":[30,65]}},
     "y": {"field": "RANK", "type": "quantitative"},
-    "color":{"field":"AVG POINTS","scale":{"scheme":"greenblue"},"type":"quantitative"}
+    "color":{"field":"AVG POINTS","scale":{"scheme":"greenblue"},"type":"quantitative"},
+    "tooltip":[{"field":"PLAYER NAME","type": "nominal"}]
   
     
 
