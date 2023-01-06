@@ -3,23 +3,25 @@
   "description": "WEEK4_task_PGARANKINGS",
   "title": {
     "text": "PGA Tour Golf Rankings",
-    "subtitle": "Based on Average points gained per event",
+    "subtitle": "Based on Average points gained per event. Source:PGA Rankings",
    "subtitleFontSize": 10,
    "subtitleFontStyle": "italic",
-   "anchor": "start",},
+   "anchor": "start"},
 
-   "width":500,
-   "height":300,
-
+   "width":300,
+   "height":250,
 
   "data": {
     "values":[{"RANK": "1", "PLAYER NAME": "Rory McIlroy", "EVENTS": 46, "AVG POINTS": 9.43}, {"RANK": "2", "PLAYER NAME": "Scottie Scheffler", "EVENTS": 51, "AVG POINTS": 9.18}, {"RANK": "3", "PLAYER NAME": "Cameron Smith", "EVENTS": 38, "AVG POINTS": 8.27}, {"RANK": "4", "PLAYER NAME": "Patrick Cantlay", "EVENTS": 39, "AVG POINTS": 8.21}, {"RANK": "5", "PLAYER NAME": "Jon Rahm", "EVENTS": 43, "AVG POINTS": 7.0}, {"RANK": "6", "PLAYER NAME": "Xander Schauffele", "EVENTS": 43, "AVG POINTS": 6.84}, {"RANK": "7", "PLAYER NAME": "Will Zalatoris", "EVENTS": 45, "AVG POINTS": 6.4}, {"RANK": "8", "PLAYER NAME": "Justin Thomas", "EVENTS": 46, "AVG POINTS": 5.93}, {"RANK": "9", "PLAYER NAME": "Matt Fitzpatrick", "EVENTS": 51, "AVG POINTS": 5.66}, {"RANK": "10", "PLAYER NAME": "Collin Morikawa", "EVENTS": 47, "AVG POINTS": 5.58}, {"RANK": "11", "PLAYER NAME": "Viktor Hovland", "EVENTS": 52, "AVG POINTS": 5.4}, {"RANK": "12", "PLAYER NAME": "Sam Burns", "EVENTS": 47, "AVG POINTS": 5.3}, {"RANK": "13", "PLAYER NAME": "Jordan Spieth", "EVENTS": 44, "AVG POINTS": 5.1}, {"RANK": "14", "PLAYER NAME": "Tom Kim", "EVENTS": 42, "AVG POINTS": 4.66}, {"RANK": "15", "PLAYER NAME": "Tony Finau", "EVENTS": 52, "AVG POINTS": 4.62}, {"RANK": "16", "PLAYER NAME": "Max Homa", "EVENTS": 49, "AVG POINTS": 4.26}, {"RANK": "17", "PLAYER NAME": "Billy Horschel", "EVENTS": 51, "AVG POINTS": 4.2}, {"RANK": "18", "PLAYER NAME": "Cameron Young", "EVENTS": 49, "AVG POINTS": 4.2}, {"RANK": "19", "PLAYER NAME": "Hideki Matsuyama", "EVENTS": 47, "AVG POINTS": 4.1}, {"RANK": "20", "PLAYER NAME": "Sungjae Im", "EVENTS": 58, "AVG POINTS": 3.94}, {"RANK": "21", "PLAYER NAME": "Shane Lowry", "EVENTS": 49, "AVG POINTS": 3.87}, {"RANK": "22", "PLAYER NAME": "Joaquin Niemann", "EVENTS": 48, "AVG POINTS": 3.69}, {"RANK": "23", "PLAYER NAME": "Keegan Bradley", "EVENTS": 47, "AVG POINTS": 2.99}, {"RANK": "24", "PLAYER NAME": "Brian Harman", "EVENTS": 52, "AVG POINTS": 2.96}, {"RANK": "25", "PLAYER NAME": "Tommy Fleetwood", "EVENTS": 52, "AVG POINTS": 2.92}, {"RANK": "26", "PLAYER NAME": "Ryan Fox", "EVENTS": 43, "AVG POINTS": 2.91}, {"RANK": "27", "PLAYER NAME": "Sepp Straka", "EVENTS": 61, "AVG POINTS": 2.9}, {"RANK": "28", "PLAYER NAME": "Abraham Ancer", "EVENTS": 48, "AVG POINTS": 2.89}, {"RANK": "29", "PLAYER NAME": "Seamus Power", "EVENTS": 47, "AVG POINTS": 2.86}, {"RANK": "30", "PLAYER NAME": "Tyrrell Hatton", "EVENTS": 50, "AVG POINTS": 2.85}, {"RANK": "31", "PLAYER NAME": "Kevin Kisner", "EVENTS": 46, "AVG POINTS": 2.79}, {"RANK": "32", "PLAYER NAME": "Corey Conners", "EVENTS": 53, "AVG POINTS": 2.74}, {"RANK": "33", "PLAYER NAME": "Russell Henley", "EVENTS": 46, "AVG POINTS": 2.73}, {"RANK": "34", "PLAYER NAME": "Aaron Wise", "EVENTS": 46, "AVG POINTS": 2.7}, {"RANK": "35", "PLAYER NAME": "Dustin Johnson", "EVENTS": 33, "AVG POINTS": 2.67}, {"RANK": "36", "PLAYER NAME": "Tom Hoge", "EVENTS": 63, "AVG POINTS": 2.65}, {"RANK": "37", "PLAYER NAME": "K.H. Lee", "EVENTS": 57, "AVG POINTS": 2.65}, {"RANK": "38", "PLAYER NAME": "Adam Scott", "EVENTS": 42, "AVG POINTS": 2.64}, {"RANK": "39", "PLAYER NAME": "Thomas Pieters", "EVENTS": 43, "AVG POINTS": 2.58}, {"RANK": "40", "PLAYER NAME": "Talor Gooch", "EVENTS": 44, "AVG POINTS": 2.52}, {"RANK": "41", "PLAYER NAME": "Kurt Kitayama", "EVENTS": 49, "AVG POINTS": 2.42}, {"RANK": "42", "PLAYER NAME": "Brooks Koepka", "EVENTS": 35, "AVG POINTS": 2.39}, {"RANK": "43", "PLAYER NAME": "Kevin Na", "EVENTS": 38, "AVG POINTS": 2.38}, {"RANK": "44", "PLAYER NAME": "Harold Varner III", "EVENTS": 47, "AVG POINTS": 2.33}, {"RANK": "45", "PLAYER NAME": "Louis Oosthuizen", "EVENTS": 32, "AVG POINTS": 2.32}, {"RANK": "46", "PLAYER NAME": "Mito Pereira", "EVENTS": 49, "AVG POINTS": 2.3}, {"RANK": "47", "PLAYER NAME": "Daniel Berger", "EVENTS": 33, "AVG POINTS": 2.3}, {"RANK": "48", "PLAYER NAME": "Jason Kokrak", "EVENTS": 43, "AVG POINTS": 2.27}, {"RANK": "49", "PLAYER NAME": "Paul Casey", "EVENTS": 32, "AVG POINTS": 2.18}, {"RANK": "50", "PLAYER NAME": "Alex Noren", "EVENTS": 50, "AVG POINTS": 2.17}]
     },
   "mark": "point",
   "encoding": {
-    "x": {"field": "AVG POINTS", "type": "quantitative"},
+    "x": {"field": "EVENTS", "type": "quantitative","scale":{"domain":[30,65]}},
     "y": {"field": "RANK", "type": "quantitative"},
-    "size": {"field": "EVENTS", "type": "quantitative", "scale":">15"},
-    "tooltip":{}
-    },
+    "color":{"field":"AVG POINTS","scale":{"scheme":"greenblue"},"type":"quantitative"}
+  
+    
+
+
+    }
   }

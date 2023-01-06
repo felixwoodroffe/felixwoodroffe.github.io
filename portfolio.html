@@ -25,245 +25,207 @@
 <body>
     
     <div class="topnav" id="myTopnav">
-  <a onclick="window.location.href = 'index1.html'" >Home</a>
+      <div style="align-content: center;">
+  <a onclick="window.location.href = 'index2.html'" >Home</a>
   <a onclick="window.location.href = 'portfolio'" class="active">Portfolio</a>
   <a onclick="window.location.href = 'project'" >Project</a>
+   </div>
    </div>    
+   
    
    <div class="container">
    <h1>Portfolio</h1>
    </div>
+  </div>
 
    <hr>
 
-   <div class="title">
+   <div class="week1">
     <h2>Homework 1 - My Website and Embedding Two Charts of Choice</h2>
+    <p> I have created this website to present my portfolio and my project for the Data Science unit 22/23.
+      Also I have embedded two charts of my interest from the RapidCharts website.</p>
+    
+      <!--Chart 1 -->
+      <p> The first chart tracks the price of Bitcoin</p>
+      <div class="chart" id="chart1"></div>
+      
+      <!--Chart 2 -->
+      <p> The second chart shows the stadium capacity in the PL</p>
+      <div class="chart" id="chart2"></div>
+
    </div> 
 
-   <hr class="dotted">
-
-   <div class="homework">
-    <p> I have created this website to present my portfolio and my project for the Data Science unit 22/23.
-        Also I have embedded two charts of my interest from the RapidCharts website.
-    </p>
-   </div>
-
-   <div class="homework">
-    <p> The first chart on the left is a chart tracking the price of Bitcoin</p>
-    <p> The second chart on the right is a chart showing the stadium capacity in the EPL</p>
-   </div>
-
    <hr>
 
 
-   <div class="chartcontainer">
-    
-    <!--Chart 1 -->
-      <div class="chart2" id="chart1">
-          <script>
-            var myChart1 = "chart4_cryptoprices.json";
-            vegaEmbed('#chart1', myChart1);
-          </script>
-       </div>
-     
-    <!--Chart 2 -->
-      <div class="chart2" id="chart2">
-        <script>
-          var myChart2 = "chart5_football.json";
-          vegaEmbed('#chart2', myChart2);
-        </script>
-      </div>
-        
-      </div>
-
-      <hr>
-      
-
-   <div class="title">
+   <div class="week2">
     <h2>Homework 2 - IMF chart and FT adjusted task</h2>
-   </div>
 
-   <hr class="dotted">
-
-   <div class="homework">
+     <!-- CHART 3 initial IMF graph-->
     <p>The first chart displays oustanding IMF lending from 1984 to present day </p>
+    <div class="chart" id="chart3"></div>
+
+     <!-- CHART 4 Adjusted IMF graph-->
     <p> The second chart is an improved version of a chart from the FT, due to inflation adjustment</p>
+    <div class="chart" id="chart4"></div>
+
+    <p> When realised by converting lending to a percentage of global GDP,  1984 is displayed as the riskiest year due to the largest percentage of outstanding credit.</p>
+
    </div>
+
 
    <hr>
 
 
-   <div class="chartcontainer">
-
-    <!-- CHART 3 initial IMF graph-->
-
-   <div class="chart2" id="chart3">
-    <script>
-      var myChart3= "chart6_IMFcreditoutstanding.json";
-      vegaEmbed('#chart3', myChart3);
-    </script>
-    </div>
-
-    <div class="chart2" id="chart4">
-      <script>
-        var myChart4="chart7_IMFadjusted.json"
-        vegaEmbed('#chart4', myChart4)
-      </script>
-    </div>
-
-    </div>
-
-    <!-- Chart 5 Daily Yields Graph WEEK 3 HOMEWORK-->
-
-
-
-    <hr>
-
-    <div class="title">
+    <div class="week3">
       <h2> Homework 3 - Two charts: online data objects and visual encodings</h2>
-    </div>
 
-    <hr class="dotted">
-
-    <div class="homework">
+      <!-- Chart 5 Graph WEEK 3 HOMEWORK-->
       <p> This chart on the left at the adjusted closing price of GBP/EUR in 2022, with price in Euros on the y-axis</p>
-      <p> The chart on the right looks at the adjusted closing price of GBP/EUR in 2022, with price in Euros on th y-axis</p>
+      <div class="chart" id="chart5"></div>
+
+      <!-- Chart 6 Adjusted Graph WEEK 3 HOMEWORK-->
+      <p> This is an adjusted version of the chart seen above.</p>
+      <div class="chart" id="chart6"></div>
+      <p> I included a tooltip, when you hover over the line in the chart you can see the specific closing price and it's date.</p>
+
     </div>
 
-    <div class="chartcontainer">
+   <hr> 
 
-    <div class="chart2" id="chart5">
-      <script>
-        var myChart5="chart9_GBPEURadjclosing.json";
-        vegaEmbed('#chart5', myChart5);
-      </script>
-    </div>
-
-    <div class="chart2" id="chart6">
-      <script>
-        var myChart6="chart10_GBPEURadjclosing.json";
-        vegaEmbed('#chart6', myChart6);
-      </script>
-    </div>
-
-  </div>
-
-  <!-- WEEK 4 Task: SCRAPING TASK PGA TOUR RANKINGS BUBBLE PLOT (COULD USE SOME ADVANCEMENTS)-->
-
-  <hr>
-  <div class="title">
+    <div class="week4">
     <h2> Homework 4 - Scraping data from a website and then visualising</h2>
-  </div>
-
-  <hr class="dotted">
-  <div class="homework">
-      <p> This chart looks at the relationship between average points gained per event and ranking on the PGA tour</p>
-    </div>
-  
-    <div class="chartcontainer">
-
-      <div class="chart2" id="chart7">
-        <script>
-          var myChart7="week4_FINALTASK.json";
-          vegaEmbed('#chart7', myChart7)
-        </script>
-      </div>
-
-
-
-
-    </div>
-
-
-    <!-- Week 5 Task: 9 graphs through the means of data loops and apis-->
+    
+    <!-- Chart 7 PGA TOUR RANKINGS -->
+    <p> This chart looks at the relationship between events played and average points upon ranking on the PGA tour</p>
+    <div class="chart" id="chart7"></div>
+    <p> I chose this site as it displayed a very comprehensive and tidy table, making data manipulation and visulaisation more straightforward.</p>
+   </div>
 
     <hr>
-    <div class="title">
+
+    <div class="week5">
       <h2> Homework 5 - Using APIs and Data loops in Python to create 9 Relevant Visualisations</h2>
+
+      <!-- Week 5 Task: 9 graphs through the means of data loops and apis-->
+      <p> These charts look at All Greenhouse Gas Emmisions (seperated by industry). Data collection and manipulation via <a href="https://colab.research.google.com/drive/1JcL-t6fgS0OIHp6zAv6PRm_3spLCT2fT#scrollTo=6LlrILxZFfbh" id="link_geojson">Collab</a></p>
+      <div class="chart5" id="FRZQ"></div>
+      <div class="chart5" id="K8AS"></div>
+      <div class="chart5" id="FS23"></div>
+      <div class="chart5" id="K8AU"></div>
+      <div class="chart5" id="K8AZ"></div>
+      <div class="chart5" id="FS9T"></div>
+      <div class="chart5" id="K8B4"></div>
+      <div class="chart5" id="K8B6"></div>
+      <div class="chart5" id="K8AR"></div>
+
+
     </div>
 
-    <hr class="dotted">
-    <div class="homework">
-      <p> These charts look at All Greenhouse Gas Emmisions (seperated by industry)</p>
+    <hr>
+
+    <div class="week7">
+
+      <h2> Homework 6 - Using GEO JSON files to create a basemap and chloropleth map of choice</h2>
+
+      <!--Week 7 Task :  Base Map of Africa-->
+      <p> A base map of Africa including a GEOJSON found via this <a href="https://geojson-maps.ash.ms" id="link_geojson">website</a> </p>
+      <div class="chart6" id="chart17"></div>
+
+      <!--Week 7 Task :  Adjusted Map of Africa-->
+      <p> Using data from Worldbank to create a chloropleth map exhibiting Fresh Water Withdrawals in Africa</p>
+      <div class="chart6" id="chart18"></div>
+
+      <p> This map shows that Egypt, Sudan and South Africa have the largest fresh water withdrawals in Africa. </p>
+
+
     </div>
 
-    <div class="chartcontainer">
+    <hr>
 
-         <div class="chart2" id="FRZQ">
-          <script>
-            var myChart8="week5_chart_frzq.json";
-            vegaEmbed('#FRZQ', myChart8);
-          </script>
-         </div>
+    <div class="week8">
+      <h2> Homework 7 - Creating two charts based of an argument made at the Economics Observatory's Festival of Economics</h2>
 
-         <div class="chart2" id="K8AS">
-          <script>
-            var myChart9="week5_chart_k8as.json";
-            vegaEmbed('#K8AS', myChart9);
-          </script>
-         </div>
+      <!-- Week 8 Task : First graph showing Railway Mania as a bubble -->
+      <p> An argument made by Tim Harford, was that Railway Mania in the mid 19th Century was in fact a Financial Bubble.</p>
+      <div class="chart6" id="chart19"></div>
 
-         <div class="chart2" id="FS23">
-          <script>
-            var myChart10="week5_chart_fs23.json";
-            vegaEmbed('#FS23', myChart10);
-          </script>
-         </div>
+      <!-- Week 8 Task : Second graph showing Railway Mania as a bubble -->
+      <p> The chart below reinforces Tim's argument that a Tulip Financial Bubble existed in the 17th Century.</p>
+      <p> This is emphasised by the huge annual depreciation rates post boom.</p>
+      <div class="chart6" id="chart20"></div>
 
-         <div class="chart2" id="K8AU">
-          <script>
-           var myChart11="week5_chart_k8au.json";
-           vegaEmbed('#K8AU', myChart11);
-          </script>
-         </div>
+    </div>
 
-         <div class="chart2" id="K8AZ">
-          <script>
-            var myChart12="week5_chart_k8az.json";
-            vegaEmbed('#K8AZ', myChart12);
-          </script>
-         </div>
-         
-         <div class="chart2" id="FS9T">
-          <script>
-          var myChart13="week5_chart_fs9t.json";
-          vegaEmbed('#FS9T', myChart13);
-          </script>
-         </div>
-
-         <div class="chart2" id="K8B4">
-          <script>
-            var myChart14="week5_chart_k8b4.json";
-            vegaEmbed('#K8B4', myChart14);
-          </script>
-         </div>
-
-         <div class="chart2" id="K8B6">
-          <script>
-            var myChart15="week5_chart_k8b6.json";
-            vegaEmbed('#K8B6', myChart15);
-          </script>
-         </div>
-
-         <div class="chart2" id="K8AR">
-          <script>
-            var myChart16="week5_chart_k8ar.json";
-            vegaEmbed('#K8AR', myChart16)
-          </script>
-         </div>
-      
-   
-
+     <hr>
     
+     <div class="week9">
+      <h2> Homework 8 - Creating two advanced charts </h2>
+
+      <!-- Week 9 Task : Advanced chart -->
+      <p> A chart to show a linear regression between pollution levels and crime rate across the UK</p>
+      <div class="chart" id="chart21"></div>
+
+      <!-- Week 9 Task : Second Advanced chart -->
+      <p> A chart to show the distribution of Mean Nitrous Dioxide Concentration across Measurement Sites in the UK</p>
+      <div class="chart" id="chart22"></div>
+
     </div>
 
+    <script>
+      //DEFINING
+      var myChart1="chart4_cryptoprices.json";
+      var myChart2="chart5_football.json";
+      var myChart3="chart6_IMFcreditoutstanding.json";
+      var myChart4="chart7_IMFadjusted.json";
+      var myChart5="chart9_GBPEURadjclosing.json";
+      var myChart6="chart10_GBPEUR2adjclosing.json";
+      var myChart7="week4_FINALTASK.json";
+      var myChart8="week5_chart_frzq.json";
+      var myChart9="week5_chart_k8as.json";
+      var myChart10="week5_chart_fs23.json";
+      var myChart11="week5_chart_k8au.json";
+      var myChart12="week5_chart_k8az.json";
+      var myChart13="week5_chart_fs9t.json";
+      var myChart14="week5_chart_k8b4.json";
+      var myChart15="week5_chart_k8b6.json";
+      var myChart16="week5_chart_k8ar.json";
+      var myChart17="AFRICABASEMAP.json";
+      var myChart18="AFRICA_WATER_MAP.json";
+      var myChart19="week8_BUBBLECHART.json";
+      var myChart20="week8_tulipchart.json";
+      var myChart21="week9_chart.json";
+      var myChart22="week9_chart2.json";
+
+      //EMBEDDING
+     vegaEmbed('#chart1', myChart1);
+     vegaEmbed('#chart2', myChart2);
+     vegaEmbed('#chart3', myChart3);
+     vegaEmbed('#chart4', myChart4);
+     vegaEmbed('#chart5', myChart5);
+     vegaEmbed('#chart6', myChart6);
+     vegaEmbed('#chart7', myChart7);
+     vegaEmbed('#FRZQ', myChart8);
+     vegaEmbed('#K8AS', myChart9);
+     vegaEmbed('#FS23', myChart10);
+     vegaEmbed('#K8AU', myChart11);
+     vegaEmbed('#K8AZ', myChart12);
+     vegaEmbed('#FS9T', myChart13);
+     vegaEmbed('#K8B4', myChart14);
+     vegaEmbed('#K8B6', myChart15);
+     vegaEmbed('#K8AR', myChart16);
+     vegaEmbed('#chart17', myChart17);
+     vegaEmbed('#chart18', myChart18);
+     vegaEmbed('#chart19', myChart19);
+     vegaEmbed('#chart20', myChart20);
+     vegaEmbed('#chart21', myChart21);
+     vegaEmbed('#chart22',myChart22)
 
 
 
 
 
-
-
+      </script>
 
 
     

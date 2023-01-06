@@ -1,0 +1,57 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+  "title":{
+    "text": "Weird Financial Bubbles - Tulip Mania",
+    "subtitle":"Price of Bulbs and Annual Depreciation Rates(%) for 5 years post bubble formation",
+    "subtitleFontStyle":"italic",
+    "fontSize":11,
+    "subtitleFontSize":9
+  },
+  
+  
+    "data": {"url": "https://raw.githubusercontent.com/felixwoodroffe/felixwoodroffe.github.io/main/tulipdata.csv"},
+   
+    "width": 300,
+    "height": 300,
+    "layer": [
+      {
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "field": "Bulb Type",
+            "type": "nominal"
+          },
+          "y": {
+            "field": "Price-1637",
+            "type": "quantitative"
+            },
+            "color":{"value":"lightblue"},
+            "tooltip":[
+              {"field":"Price-1637","type": "quantitative","title":"Price(1637)"},
+              {"field":"Annual % Depreciation"}] 
+          }
+        },
+      {
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "Bulb Type",
+            "type": "nominal"
+          },
+          "y": {
+            "field": "Annual % Depreciation",
+            "type": "quantitative",
+            "title":"Annual % Depreciation (1937-1942)",
+            "axis": {
+              "grid": false
+            },
+            "scale": {"zero": false}
+          },
+          "color": {"value": "teal"},
+          "tooltip":[{"field":"Price-1637","type": "quantitative"},{"field":"Annual % Depreciation"}]
+        }
+      }
+    ],
+    "resolve": {"scale": {"y": "independent"}}
+  }

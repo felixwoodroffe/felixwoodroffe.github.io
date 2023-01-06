@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "Railway Mania Bubble Chart",
+
+    "title":{
+      "text":"Railway Mania Stock Indexes",
+      "subtitle":"Bubble Chart of the Indexed Price of Railway Stocks during the Bubble",
+      "subtitleFontSize": 10,
+      "subtitleFontStyle": "italic",
+      "anchor": "start"
+
+    },
+    
+    "width": 300,
+    "height": 300,
+  
+    "data":{
+      "url": "https://raw.githubusercontent.com/felixwoodroffe/felixwoodroffe.github.io/main/Week8_taskdata.csv"},
+
+      "mark": "circle",
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal"},
+    "y": {"field": "INDEX (Jan 1, 1843=1000)", 
+    "type": "quantitative",
+    "scale":{"domain":[600,2000]}
+    },
+  
+  
+     "color": {"field": "Total Market Capitalization (£ m)",
+     "scale":{"scheme":"lightgreyred"},
+     "type":"quantitative"
+      },
+
+     "tooltip":[{"field":"Total Market Capitalization (£ m)", "type": "nominal", "title":"Total Market Capitalization(mil)"}]
+    
+}
+}

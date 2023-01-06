@@ -1,0 +1,35 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "description": "week9_secondadvancedchart",
+  
+    "title":{
+      "text":"Mean Nitrous Dioxide Concentration by Site Location",
+      "fontSize":11,
+      "subtitle":"Histogram chart (Source: ONS)",
+      "subtitleFontSize":10,
+      "subtitleFontStyle":"italic",
+      "anchor": "start",
+      "color":"saddlebrown"
+      
+  
+    },
+  
+    "data": {"url": "https://raw.githubusercontent.com/felixwoodroffe/felixwoodroffe.github.io/main/week9_task.csv"},
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "bin": true,
+        "field": "Annual Mean NO2 concentration (µg/m3)",
+        "axis": {"title": "Annual Mean NO2 concentration (µg/m3)", "grid": false}
+      },
+      "y": {
+        "aggregate": "count",
+        "axis": {"title": "Number of areas", "grid": false}
+      },
+      "color": {"field": "Site", "scale": {"scheme": "browns"}, "legend": null},
+      "tooltip": [{"field": "Site"}, {"field": "Annual Mean NO2 concentration (µg/m3)", "title": "Annual Mean NO2 concentration (µg/m3)"}]
+    }
+  }
+  
+  
