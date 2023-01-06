@@ -1,52 +1,52 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "Africa Map",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Africa Map",
 
-    "title":{
-      "text":"Annual freshwater Withdrawals in  Africa",
-      "subtitle":"Cloropleth map showing total  freshwater withdrawals around Africa(billion cubic meters), Source (WorldBank) ",
-      "subtitleFontSize": 10,
-      "subtitleFontStyle": "italic",
-      "anchor": "start"
+  "title":{
+    "text":"Annual freshwater Withdrawals in  Africa",
+    "subtitle":"Cloropleth map showing total  freshwater withdrawals around Africa(billion cubic meters), Source (WorldBank) ",
+    "subtitleFontSize": 10,
+    "subtitleFontStyle": "italic",
+    "anchor": "start"
 
-    },
+  },
+  
+  "width": 400,
+  "height": 400,
+
+  "data":{
+    "url": "https://raw.githubusercontent.com/felixwoodroffe/felixwoodroffe.github.io/main/AFRICAGEO.json",
+    "format":{ 
+    "property": "features"}},
     
-    "width": 400,
-    "height": 400,
-  
-    "data":{
-      "url": "https://raw.githubusercontent.com/felixwoodroffe/felixwoodroffe.github.io/main/AFRICAGEO.json",
-      "format":{ 
-      "property": "features"}},
-      
-      "projection": {"type": "mercator"},
+    "projection": {"type": "mercator"},
 
-      "transform": [
-        {
-          "lookup": "properties.name",
-          "from":{
-            "data":{
-              "url": "https://raw.githubusercontent.com/felixwoodroffe/felixwoodroffe.github.io/main/Africa_waterdata.csv"},
-              "key": "Country Name",
-              "fields": ["Annual freshwater withdrawals, total (billion cubic meters)"]
-            }
+    "transform": [
+      {
+        "lookup": "properties.name",
+        "from":{
+          "data":{
+            "url": "https://raw.githubusercontent.com/felixwoodroffe/felixwoodroffe.github.io/main/Africa_waterdata.csv"},
+            "key": "Country Name",
+            "fields": ["Annual freshwater withdrawals, total (billion cubic meters)"]
           }
-        
-        
-      ],
-
-      "mark":{"type": "geoshape",
-      "stroke": "darkgrey",
-      "strokeWidth": 0.5
+        }
       
       
-      },
-  
-  "encoding": {
-    "tooltip":[{"field":"properties.name", "type": "nominal", "title":"Country"},
-    {"field":"Annual freshwater withdrawals, total (billion cubic meters)", "title":"Annual freshwater withdrawals, total (billion cubic meters)"}],
+    ],
+
+    "mark":{"type": "geoshape",
+    "stroke": "darkgrey",
+    "strokeWidth": 0.5
+    
+    
+    },
+
+"encoding": {
+  "tooltip":[{"field":"properties.name", "type": "nominal", "title":"Country"},
+  {"field":"Annual freshwater withdrawals, total (billion cubic meters)", "title":"Annual freshwater withdrawals, total (billion cubic meters)"}],
 
 
-    "color":{"field":"Annual freshwater withdrawals, total (billion cubic meters)", "type": "quantitative", "title":"Annual freshwater withdrawals(billion cubic meters)", }
-  }
-  }
+  "color":{"field":"Annual freshwater withdrawals, total (billion cubic meters)", "type": "quantitative", "title":"Annual freshwater withdrawals(billion cubic meters)"}
+}
+}
