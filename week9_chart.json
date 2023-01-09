@@ -3,11 +3,12 @@
 
   "title":{
     "text":"Linear Regression of Pollution Concentration on Crime Rates Across England",
-    "anchor": "start",
+    "anchor": "middle",
     "fontSize":11,
     "subtitle":"Using Data from Pollution Measurement Sites. Source:ONS",
     "subtitleFontSize":10,
     "subtitleFontStyle":"italic"
+    
   },
 
   "data": {
