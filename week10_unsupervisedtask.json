@@ -1,0 +1,37 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Unsupervised Machine Learning Task Portfolio",
+  
+    "title":{
+      "text":"Clustered Machine Learning Analysis on 2018 IPL Data",
+      "fontSize":11,
+      "subtitle":"Analysing Relationship Between Runs Scored and Matches",
+      "subtitleFontSize":9.5,
+      "subtitleFontStyle":"italic",
+      "anchor": "start"
+  
+    },
+  
+  
+    "data": {
+      "url": "https://raw.githubusercontent.com/felixwoodroffe/felixwoodroffe.github.io/main/clusteredcricketdata.csv"
+    },
+    "mark": "point",
+    "encoding": {
+      "x": {
+        "field": "Runs",
+        "type": "quantitative",
+        "scale": {"zero": false}
+      },
+      "y": {
+        "field": "Matches",
+        "type": "quantitative",
+        "scale": {"zero": false}
+      },
+      "color": {"field": "cluster", "type": "nominal","title":"Cluster","scale":{"scheme":"plasma"}},
+      "shape": {"field": "cluster", "type": "nominal"},
+  
+      "tooltip":{"field":"PLAYER"}
+    }
+  }
+  

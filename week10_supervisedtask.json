@@ -1,0 +1,25 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Machine Learning Superpvised example.",
+    "title":{
+      "text":"Crime Total Offence Predictions for the UK Using Poverty Data",
+      "fontSize":11,
+      "subtitle":"Linear Regression Machine Learning Model. Data Source (ONS,Trussel Trust)",
+    "subtitleFontSize":9.5,
+    "anchor": "start",
+    "subtitleFontStyle":"italic"
+    },
+    "width":175,
+    "height":200,
+  
+    "data": {"url": "https://raw.githubusercontent.com/felixwoodroffe/felixwoodroffe.github.io/main/crime_predictions.csv"},
+    "mark": "point",
+    "encoding": {
+      "x": {"field": "Houses in Food Poverty", "type": "quantitative","title":"Households in Food Poverty","scale":{"domain":[50000,250000]}},
+      "y": {"field": "Total Offences", "type": "quantitative"},
+      "color":{"field":"Population", "type":"quantitative","scale":{"scheme":"goldred"}},
+      "tooltip":[{"field":"Houses in Food Poverty","title":"Households (Food Poverty)"},{"field":"Households in fuel poverty","title":"Households(Fuel Poverty)"}]
+        }
+  
+  }
+  

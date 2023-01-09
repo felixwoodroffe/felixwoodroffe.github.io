@@ -96,7 +96,7 @@
     <h2> Homework 4 - Scraping data from a Website and Visualising the Information</h2>
     
     <!-- Chart 7 PGA TOUR RANKINGS -->
-    <p> This chart looks at the factors of the PGA Tour. Data was scraped, manipulated and exported on <a href="https://colab.research.google.com/drive/1VCEWiglDWffJOw_FgIOjTR6Vs-klrgcx" id="link_PGA">Collab</a> </p>
+    <p> This chart looks at the factors of the PGA Tour. Data was scraped, manipulated and exported on <a href="https://colab.research.google.com/drive/1VCEWiglDWffJOw_FgIOjTR6Vs-klrgcx?usp=sharing" id="link_PGA">Collab</a> </p>
     <div class="chart" id="chart7"></div>
     <p> I chose this page as it displayed a very comprehensive and tidy table, making data manipulation and visulaisation more straightforward.</p>
    </div>
@@ -107,7 +107,7 @@
       <h2> Homework 5 - Using APIs and Data loops in Python to create 9 Relevant Visualisations</h2>
 
       <!-- Week 5 Task: 9 graphs through the means of data loops and apis-->
-      <p> These charts look at All Greenhouse Gas Emmisions (seperated by industry). Data collection and manipulation via <a href="https://colab.research.google.com/drive/1RIGiUkt2-xJmLojGWbSMYn9LCoQn_fQp" id="link_geojson">Collab</a></p>
+      <p> These charts look at All Greenhouse Gas Emmisions (seperated by industry). Data collection and manipulation via <a href="https://colab.research.google.com/drive/1RIGiUkt2-xJmLojGWbSMYn9LCoQn_fQp?usp=sharing" id="link_geojson">Collab</a></p>
       <div class="chart5" id="FRZQ"></div>
       <div class="chart5" id="K8AS"></div>
       <div class="chart5" id="FS23"></div>
@@ -125,7 +125,7 @@
 
     <div class="week7">
 
-      <h2> Homework 6 - Using GEO JSON files to create a Basemap and Chloropleth map of Africa</h2>
+      <h2> Homework 6 - Using GEO JSON files to Create a Basemap and Chloropleth map of Africa</h2>
 
       <!--Week 7 Task :  Base Map of Africa-->
       <p> A base map of Africa from a GEOJSON found via this <a href="https://geojson-maps.ash.ms" id="link_geojson">website</a> </p>
@@ -171,6 +171,29 @@
 
     </div>
 
+    <hr>
+
+    <div class="week10">
+      <h2> Homework 9 - Supervised and Unsupervised Machine Learning Visualisations</h2>
+
+      <!--Week 10 Task : Supervised Machine Learning-->
+      <p> Supervised Learning (Regression): Does a larger number of households in Fuel Poverty predict higher total crime offences across the UK? </p>
+      <img src="task10scatter.png" alt="Supervised Machine Learning" width="400" height="300" >
+      <p> I found from my anaylsis and visualisation that more households in fuel poverty predicts an increase in total offences across the UK. </p>
+
+      <!--Week 10 Task : Unsupervised Machine Learning-->
+      <p> Unsupervised Learning (Clustered): Relationship between IPL (2018) data, analysing runs and matches between players.</p>
+      <div class="chart" id="chart23"></div>
+      <p> The three clusters are clearly different bar one anomaly, mainly split by runs the groups run from 0-175, 175-400 and then 400+.</p>
+
+
+    </div>
+
+
+
+
+
+
     <script>
       //DEFINING
       var myChart1="chart4_cryptoprices.json";
@@ -195,6 +218,7 @@
       var myChart20="week8_tulipchart.json";
       var myChart21="week9_chart.json";
       var myChart22="week9_chart2.json";
+      var myChart23="week10_unsupervisedtask.json"
 
       //EMBEDDING
      vegaEmbed('#chart1', myChart1);
@@ -218,7 +242,8 @@
      vegaEmbed('#chart19', myChart19);
      vegaEmbed('#chart20', myChart20);
      vegaEmbed('#chart21', myChart21);
-     vegaEmbed('#chart22',myChart22)
+     vegaEmbed('#chart22',myChart22);
+     vegaEmbed('#chart23',myChart23)
 
 
 

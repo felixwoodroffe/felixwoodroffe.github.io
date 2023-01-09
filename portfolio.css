@@ -247,3 +247,14 @@ h1{
     margin-bottom:20px;
     text-align: center;
 }
+
+.week10{
+    margin: auto;
+    max-width: 1200px;
+    background-color:rgba(255, 255, 255);
+    border: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+    text-align: center;
+}
