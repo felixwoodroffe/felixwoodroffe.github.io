@@ -3,7 +3,7 @@
   "description": "Africa Map",
 
   "title":{
-    "text":"Annual freshwater Withdrawals in  Africa",
+    "text":"Annual Freshwater Withdrawals in  Africa",
     "subtitle":"Cloropleth map showing total  freshwater withdrawals around Africa(billion cubic meters), Source (WorldBank) ",
     "subtitleFontSize": 10,
     "subtitleFontStyle": "italic",
