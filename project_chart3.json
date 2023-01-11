@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart3_project",
+  "title":{
+    "text":"Ethnic Composition of the Regions",
+    "subtitle":"Source : ONS(2019)",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":"10"
+  },
+
+  "width":200,
+  "height":175,
+
+  "config": {
+  "background": "rgb(255, 255, 255)",
+  "view": {"stroke": "transparent"}},
+
+  "data": {
+    "url":"https://raw.githubusercontent.com/felixwoodroffe/felixwoodroffe.github.io/main/project_chart3data.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": {"type": "arc"},
+  "encoding": {
+    "facet": {"field": "Region", "title": null, "type": "ordinal", "columns": 3},
+    "theta": {"field": "Value", "type": "quantitative"},
+    "color": {
+      "field": "Ethnicity ",
+      "sort": "descending",
+      "type": "nominal",
+      "scale": {"scheme": "greenblue"},
+      "title": "Ethnicity"
+    },
+    "tooltip":[{"field":"Ethnicity ","type": "nominal"},{"field":"Value","type":"quantitative","title":"Proportion(%)"}]
+  }
+}

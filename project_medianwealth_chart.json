@@ -1,0 +1,22 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "https://raw.githubusercontent.com/felixwoodroffe/felixwoodroffe.github.io/main/wealthdata.csv"},
+    "mark": {"type": "line", "stroke":"deepskyblue"
+    },
+    "title":{
+      "text":"Median Total Individual Wealth Across UK Regions",
+      "subtitle":"Comparing the Change in Median Total Individual Wealth Across UK Regions ",
+      "subtitleFontSize":9.5,
+      "subtitleFontStyle":"italic",
+      "subtitleColor":"orangered",
+      "fontSize":12
+    },
+  
+    "encoding": {
+      "facet": {"field": "Area", "type": "nominal", "columns": 3,"title":null},
+      "x": {"field": "Year", "type": "temporal"},
+      "y": {"field": "Median Average Total Individual Wealth", "type": "quantitative", "title":"Total Individual Wealth (Median - £)"},
+      "tooltip":[{"field":"Year","type": "temporal"},{"field":"Average Total Individual Wealth ","type": "quantitative"}]
+    }
+  }
+  

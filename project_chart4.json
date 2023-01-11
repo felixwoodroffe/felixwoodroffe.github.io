@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Project_chart4",
+  "title": {
+    "text": "Political Affiliation across UK Regions",
+    "subtitle": "Source: House of Commons Library 2019 ",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "#000000",
+    "subtitleColor": "#c55c15"
+  },
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/felixwoodroffe/felixwoodroffe.github.io/main/2019GERESULTS.csv"
+  },
+
+  "config": {
+  "background": "rgb(255, 255, 255)",
+  "view": {"stroke": "transparent"}},
+
+  "mark": {"type": "bar"},
+  "width": 300,
+  "height": 200,
+  "encoding": {
+    "x": {
+      "field": "Percentage of Total Votes ",
+      "title": null,
+      "aggregate":"sum",
+      "sort":"ascending"
+    },
+    "y": {"field": "Region ", "title": null,"type":"nominal"},
+    "color": {
+      "field":"Party",
+      "scale":{"scheme":"browns","reverse":true}
+    },
+    "tooltip": [{"field": "Region "}, {"field": "Party"}, {"field": "Percentage of Total Votes "}]
+  }
+}

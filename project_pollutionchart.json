@@ -1,0 +1,84 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "title":{
+      "text":"Linear Regression of Pollution Concentration on Crime Rates Across England",
+      "anchor": "middle",
+      "fontSize":11,
+      "subtitle":"Using Data from Pollution Measurement Sites. Source:ONS",
+      "subtitleFontSize":10,
+      "subtitleFontStyle":"italic"
+      
+    },
+  
+    "data": {
+      "url": "https://raw.githubusercontent.com/felixwoodroffe/felixwoodroffe.github.io/main/week9_task.csv"
+    },
+  
+    "width":250,
+    "height":200,
+  
+    "layer": [
+      {
+        "mark": {
+          "type": "point",
+          "filled": true
+        },
+        "encoding": {
+          "x": {
+            "field": "Criminal Offences per 1000 people",
+            "type": "quantitative",
+            "title":"Offences per 1000 people",
+            "scale":{"domain":[40,140]}
+          },
+          "y": {
+            "field": "Annual Mean NO2 concentration (µg/m3)",
+            "type": "quantitative"
+          },
+          "tooltip":{"field":"Site","type": "nominal"}
+        }
+      },
+      {
+        "mark": {
+          "type": "line",
+          "color": "firebrick"
+        },
+        "transform": [
+          {
+            "regression": "Annual Mean NO2 concentration (µg/m3)",
+            "on": "Criminal Offences per 1000 people"
+          }
+        ],
+        "encoding": {
+          "x": {
+            "field": "Criminal Offences per 1000 people",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "Annual Mean NO2 concentration (µg/m3)",
+            "type": "quantitative"
+        }
+      },
+  
+        "transform": [
+          {
+            "regression": "Criminal Offences per 1000 people",
+            "on": "Annual Mean NO2 concentration (µg/m3)",
+            "params": true
+          },
+          {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+        ],
+        "mark": {
+          "type": "text",
+          "color": "firebrick",
+          "x": "width",
+          "align": "right",
+          "y": -5
+        },
+        "encoding": {
+          "text": {"type": "nominal", "field": "R2"}
+        }
+      }
+    ]
+  }
+  

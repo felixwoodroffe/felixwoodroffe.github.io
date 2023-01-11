@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "PROJECT Map",
+
+  "title":{
+    "text":"",
+    "subtitle":"",
+    "subtitleFontSize": 10,
+    "subtitleFontStyle": "italic",
+    "anchor": "start"
+
+  },
+  
+  "width": 350,
+  "height": 350,
+
+  "data":{
+    "url": "https://raw.githubusercontent.com/felixwoodroffe/felixwoodroffe.github.io/main/BaseRegionUKMap.json",
+    "format":{ 
+    "property": "features"}},
+    
+    "projection": {"type": "mercator"},
+
+    "transform": [
+      {
+        "lookup": "properties.name",
+        "from":{
+          "data":{
+            "url": "https://raw.githubusercontent.com/felixwoodroffe/felixwoodroffe.github.io/main/REGION_BASIC_DATA.csv"},
+            "key": "ITL121NM",
+            "fields": ["Region"]
+          }
+        }
+      
+      
+    ],
+
+    "mark":{"type": "geoshape",
+    "fill":"lavenderblush",
+    "stroke": "darkgrey",
+    "strokeWidth": 0.5
+    
+    
+    },
+
+"encoding": {
+  "tooltip":[{"field":"properties.name", "type": "nominal", "title":"Country"},
+  {"field":"", "title":""}],
+
+
+  "color":{"field":"", "type": "quantitative", "title":"Annual freshwater withdrawals(billion cubic meters)"}
+}
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/felixwoodroffe/felixwoodroffe.github.io/main/wealthdata.csv"},
+  "mark": {"type": "line", "stroke":"lawngreen"
+  },
+
+  "title":{
+    "text":"Upper Quartile Boundary for Total Individual Wealth Across Regions",
+    "fontSize":12,
+    "anchor": "start",
+    "subtitle":"Comparing the Change in the point at which 75% of the population has less wealth, and 25% has more wealth.",
+    "subtitleFontSize":9.5,
+    "subtitleFontStyle":"italic",
+    "subtitleColor":"darkorange"
+  },
+
+  "encoding": {
+    "facet": {"field": "Area", "type": "nominal", "columns": 3, "title":null},
+    "x": {"field": "Year", "type": "temporal"},
+    "y": {"field": "Total Wealth 75 Percentile", "type": "quantitative", "title":"Total Wealth 75th Percentile(£)","scale":{"domain":[300000,1100000]}
+  }
+  }
+}
+  
