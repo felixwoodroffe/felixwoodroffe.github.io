@@ -16,7 +16,7 @@
     "view": {"stroke": "transparent"}},
   
     "data": {
-      "url":"https://raw.githubusercontent.com/felixwoodroffe/felixwoodroffe.github.io/main/project_chart32data.csv",
+      "url":"https://raw.githubusercontent.com/felixwoodroffe/felixwoodroffe.github.io/main/minorityracedata.csv",
       "format": {"type": "csv"}
     },
     "mark": {"type": "arc"},
