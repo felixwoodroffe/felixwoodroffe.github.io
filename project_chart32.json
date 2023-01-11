@@ -32,4 +32,4 @@
       },
       "tooltip":[{"field":"Ethnicity ","type": "nominal"},{"field":"Value ","type":"quantitative","title":"Proportion(%)"}]
     }
-  }
+}
