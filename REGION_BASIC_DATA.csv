@@ -1,8 +1,8 @@
-ITL121NM,"Population size UK 2020, by region  ","Population density UK, by region",Total Recorded Crime (excluding fraud),Crime Rate per 1000 people
-South East (England),"9,217,265",483,"663,312",71.96408045
-South West (England),"5,659,143",237,"345,266",61.01029785
-North East (England),"2,680,763",312,"256,691",95.75296287
-North West (England),"7,367,456",522,"647,662",87.90849922
-London,"9,002,488",5727,"794,306",88.23183102
-East Midlands (England),"4,865,583",311,"371,138",76.27821784
-West Midlands (England),"5,961,929",459,"453,323",76.03629631
+ITL121NM,Population size UK 2020,Population density UK,Total Recorded Crime (excluding fraud),Crime Rate per 1000 people
+South East (England),9217265,483,663312,71
+South West (England),5659143,237,345266,61
+North East (England),2680763,312,256691,95
+North West (England),7367456,522,647662,87
+London,9002488,5727,794306,88
+East Midlands (England),4865583,311,371138,76
+West Midlands (England),5961929,459,453323,76
