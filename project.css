@@ -1,0 +1,260 @@
+
+/* Import a font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+/* Set the background color for my page: */
+body{
+    background-color: rgb(255, 255, 255);
+
+
+
+}
+.topnav {
+    overflow: hidden;
+    background-color: white;
+    width: 1000px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #092ea8;
+    text-align: center;
+    padding: 20px 0px;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    width: 333.3333px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(0, 183, 255);
+    color: white;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .topnav a.active {
+    background-color: #092ea8;
+    color: white;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+.container{
+    background-color: transparent;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif
+} 
+
+p{
+    color:black;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 30;
+} 
+
+h2{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+}  
+
+.title{
+    background-color: transparent;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+}    
+    
+.homework{
+    background-color: transparent;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}     
+
+.chart{
+    background-color: white;
+    width:485px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color:rgba(35, 174, 255, 0.75);
+    margin-bottom:20px;
+}
+
+.chart2{
+    background-color: white;
+    width:450px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #092ea8;
+    margin: 10px;
+}
+
+.chart3{
+    background-color: white;
+    width:450px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #FFB347;
+    margin: 10px;
+}
+
+.chart4{
+    background-color: white;
+    width:550px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #11d5f4;
+    margin: 20px 225px 20px 225px;
+}
+
+.chart5{
+    background-color: white;
+    width: 300px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color:rgba(35, 174, 255, 0.75);
+    margin-bottom:20px;
+    text-align: center;
+    align-items: center;
+}
+
+.chart6{
+    background-color: white;
+    width: auto;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color:rgba(35, 174, 255, 0.75);
+    margin-bottom:20px;
+    text-align: center;
+    align-items: center;
+}
+
+.chartcontainer{
+    text-align: center;
+    align-items: flex-start;
+    display: inline-block;
+    width: 1000px;
+    margin: 20px 0px 20px 0px;
+}
+
+.week1{
+    margin: auto;
+    max-width: 1200px;
+    background-color: rgb(255, 255, 255);    
+    border: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+    align-items: center;
+    text-align: center;
+}
+
+.week2{
+    margin: auto;
+    max-width: 1200px;
+    background-color: rgb(255, 255, 255);    
+    border: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+    text-align: center;
+}
+
+.week3{
+    margin: auto;
+    max-width: 1200px;
+    background-color: rgb(255, 255, 255);    
+    border: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+    text-align: center;
+}
+
+.week4{
+    margin: auto;
+    max-width: 1200px;
+    background-color: rgb(255, 255, 255);    
+    border: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+    text-align: center;
+}
+
+.week5{
+      margin: auto;
+      max-width: 1200px;
+      background-color:rgba(255, 255, 255);
+      border: solid;
+      border-radius: 5px;
+      border-color:rgba(48, 38, 38,0.75);
+      margin-bottom:20px;
+      text-align: center;
+}
+
+.week7{
+    margin: auto;
+    max-width: 1200px;
+    background-color:rgba(255, 255, 255);
+    border: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+    text-align: center;
+}
+
+.week8{
+    margin: auto;
+    max-width: 1200px;
+    background-color:rgba(255, 255, 255);
+    border: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+    text-align: center;
+}
+
+.week9{
+    margin: auto;
+    max-width: 1200px;
+    background-color:rgba(255, 255, 255);
+    border: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+    text-align: center;
+}
+
+.week10{
+    margin: auto;
+    max-width: 1200px;
+    background-color:rgba(255, 255, 255);
+    border: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+    text-align: center;
+}
