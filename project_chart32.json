@@ -22,7 +22,7 @@
     "mark": {"type": "arc"},
     "encoding": {
       "facet": {"field": "Region", "title": null, "type": "ordinal", "columns": 3},
-      "theta": {"field": "Value ", "type": "quantitative"},
+      "theta": {"field": "Value", "type": "quantitative"},
       "color": {
         "field": "Ethnicity ",
         "sort": "descending",
